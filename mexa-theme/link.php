@@ -1,0 +1,138 @@
+<?php
+/**
+ * Template Name: Infrastructure Page
+ * Description: WordPress template for the Інфраструктура layout.
+ *
+ * @package MEXA_Infrastructure
+ */
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ШІ ЕКО - Майнінг</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<nav id="header" class="fixed">
+        <ul>
+            <li class="nav-link"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Головна сторінка</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/link/' ) ); ?>">Інфраструктура</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/link2/' ) ); ?>">Токен</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/link3/' ) ); ?>">Навігатор по сайту</a></li>
+        </ul>
+    </nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+   <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="ai">ШІЕКО</span>
+                <div class="title">МАЙНІНГ НА КІНЧИКАХ ПАЛЬЦІВ</div>
+                <span>
+            </div>
+
+        </div>
+        <div class="heading1"></div>
+        <div class="header-links">
+            <a href="#">Що таке BlockDAG <span class="arrow">→</span></a>
+            <a href="#">Стаття GhostDAG <span class="arrow">→_0xC2_0xA0></a>
+        </div>
+        <div class="header-info">
+            <ul>
+                <li>Отримайте частку в майнінгу провідних протоколів BlockDAG</li>
+                <li>Не вимагає апаратного забезпечення, графічного процесора чи обслуговування</li>
+                <li>Підвищена ефективність завдяки розширеним алгоритмам, керованим AI</li>
+                <li>Стійкі екологічно чисті практики</li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="container">
+        <div style="font-size: 34px;"><a class="titlee">SAIDAG</a> ІНФРАСТРУКТУРА</div>
+        <div class="menu"><button class="active">Майнінг</button>
+          <button>Навігація</button>
+          <button>ШІ & Еко</button>
+            </div>
+
+        </div>
+        <div class="card-container">
+        <div class="card">
+          <div class="card-header">
+              <h2>IceRiver KS3M</h2>
+              <p class="i">Модель KS3M Mining KHeavyHash</p>
+          </div>
+          <div class="card-body">
+              <p>Алгоритм: KHeavyHash</p>
+              <p>Швидкість хешування: 6Th/s ± 10%</p>
+              <p>Споживання: 3400 Вт ± 10%</p>
+              <div class="availability">
+                  <div class="availability-bar" style="width: 0%;"></div>
+                  <p>0%</p>
+              </div>
+              <button class="buy-button">Купити</button>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <h2>Bitmain Antminer KS3 (8.3Th)</h2>
+              <p>Модель Antminer KS3 (8.3Th)</p>
+          </div>
+          <div class="card-body">
+              <p>Алгоритм: KHeavyHash</p>
+              <p>Швидкість хешування: 6Th/s ± 10%</p>
+              <p>Споживання: 3188 Вт ± 10%</p>
+              <div class="availability">
+                  <div class="availability-bar" style="width: 25%;"></div>
+                  <p>25%</p>
+              </div>
+              <p class="available">В наявності</p>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header">
+              <h2>IBeLink BM-KS Max</h2>
+              <p>Модель BM-KS Max</p>
+          </div>
+          <div class="card-body">
+              <p>Алгоритм: KHeavyHash</p>
+              <p>Швидкість хешування: 10.5 Th/s ± 5%</p>
+              <p>Споживання: 3400 Вт ± 5%</p>
+              <div class="availability">
+                  <div class="availability-bar" style="width: 34%;"></div>
+                  <p>34%</p>
+              </div>
+              <p class="available">В наявності</p>
+          </div>
+
+      </div>
+      <div class="card">
+
+        <div class="card-header"></div>
+        <div class="card-body"></div>
+      </div>
+      <div class="card">
+
+        <div class="card-header"></div>
+        <div class="card-body"></div>
+
+
+      </div>
+      <div class="card">
+
+        <div class="card-header"></div>
+        <div class="card-body"></div>
+     </div>
+     <script src="function.js"></script>
+     <?php wp_footer(); ?>
+</body>
+</html>
